@@ -22,7 +22,7 @@ export const login = async () => {
 export const setBag = async items => {
   if (!wax || !wax.userAccount || !items) return null;
 
-  const result = wax.api.transact(
+  const result = await wax.api.transact(
     {
       actions: [
         {

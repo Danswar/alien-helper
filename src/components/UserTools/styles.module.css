@@ -1,0 +1,6 @@
+.swapContainer {
+  width: 120px;
+}
+.swapContainer:hover {
+  width: 150px;
+}

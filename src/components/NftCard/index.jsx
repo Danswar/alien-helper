@@ -1,13 +1,9 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-const NftCard = ({ id, img, index }) => {
-  const onDrag = e => {
-    e.dataTransfer.setData("id", id);
-  };
-
+const NftCard = ({ id, img, onCardClick }) => {
   return (
-    <div className={styles.cardContainer} draggable onDragStart={onDrag}>
+    <div onClick={() => onCardClick(id)} className={styles.cardContainer}>
       <p style={{ display: "none" }}>{id}</p>
       <img
         src={`https://ipfs.io/ipfs/${img}`}
