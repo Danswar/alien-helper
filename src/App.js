@@ -123,6 +123,16 @@ function App() {
           Bag ready to use!!
         </Alert>
       </Snackbar>
+      <p
+        style={{
+          textAlign: "center",
+          position: "absolute",
+          bottom: 0,
+          width: "100%",
+        }}
+      >
+        <strong>Buy me a coffee:</strong> xvnba.wam
+      </p>
     </div>
   );
 }
